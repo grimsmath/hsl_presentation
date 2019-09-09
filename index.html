@@ -65,15 +65,15 @@
               </div>
               <div class="col">
                 <h3>David King, Jr.</h3>
-                <ul style="font-size: .85em">
-                  <li class="fragment">Software engineer</li>
-                  <li class="fragment">Web App/UX/UI Designer</li>
-                  <li class="fragment">Problem solver</li>
-                  <li class="fragment">Mentor &amp; trainer</li>
-                  <li class="fragment">Spacemacs/VIM user</li>
-                  <li class="fragment">Louisville native</li>
-                  <li class="fragment">Introduced to the Internet here at UofL (c. 1993)</li>
-                  <li class="fragment">Lastly...father of a cat</li>
+                <ul class="fragment-fade" style="font-size: .85em">
+                  <li>Software engineer</li>
+                  <li>Web App/UX/UI Designer</li>
+                  <li>Problem solver</li>
+                  <li>Mentor &amp; trainer</li>
+                  <li>Spacemacs/VIM user</li>
+                  <li>Louisville native</li>
+                  <li>Introduced to the Internet here at UofL (c. 1993)</li>
+                  <li>Lastly...father of a cat</li>
                 </ul>
               </div>
             </div>
@@ -94,7 +94,7 @@
               <i class="fa fa-object-group"></i>
               Form
             </h2>
-            <ul>
+            <ul class="fragment-fade">
               <li>Visual appeal</li>
               <li>Engaging user interface</li>
               <li>Layout consistency</li>
@@ -107,7 +107,7 @@
               <i class="fa fa-file-code"></i>
               Function
             </h2>
-            <ul>
+            <ul class="fragment-fade">
               <li>Places top resources Above-the-Fold</li>
               <li>Describes what the library has to offer</li>
               <li>Provides address/location/availability</li>
@@ -121,7 +121,7 @@
               <i class="fa fa-audio-description"></i>
               Accessibility
             </h2>
-            <ul>
+            <ul class="fragment-fade">
               <li>W3C standards (Alt, Aria, etc.)</li>
               <li>HTML5 semantic markup (header, footer, etc.)</li>
               <li>Keyboard navigation</li>
@@ -130,8 +130,20 @@
             </ul>
           </section>
           <section>
+            <h2>DEFINITIONS</h2>
+            <ul class="fragment-fade">
+              <li>CMS &mdash; Content Management System</li>
+              <li>CSS &mdash; Cascading Style Sheets</li>
+              <li>HTML &mdash; Hypertext Markup Language</li>
+              <li>UX/UI &mdash; User Experience/User Interface</li>
+              <li>Spacemacs &mdash; Custom EMACS text editor</li>
+              <li>VIM &mdash; VI Improved; Modal Text Editor</li>
+              <li>PHP &mdash; General purpose programming language</li>
+            </ul>
+          </section>
+          <section>
             <h2>ASSUMPTIONS</h2>
-            <ul>
+            <ul class="fragment-fade">
               <li>Not all criteria were applicable</li>
               <li>Bypassed LibGuides-based homepages</li>
               <li>Critique is highly subjective...thus</li>
@@ -198,7 +210,7 @@
 
 				<section data-background-image="img/suny/suny-bg.png">
           <section>
-            <h2>UPSTATE MEDICAL COLLEGE HSL | SUNY</h2>
+            <h2>SUNY UPSTATE MEDICAL COLLEGE<br/>Health Sciences Library</h2>
             <ul>
               <li>Custom CMS (PHP)</li>
               <li>Bootstrap CSS Framework</li>
@@ -272,7 +284,7 @@
 		</div>
 
 		<script src="js/reveal.js"></script>
-
+    <script type="text/javascript" src="lib/js/jquery.min.js"></script>
 		<script>
 			// More info about config & dependencies:
 			// - https://github.com/hakimel/reveal.js#configuration
@@ -285,6 +297,10 @@
 					{ src: 'plugin/highlight/highlight.js', async: true }
 				]
 			});
+
+      $(document).ready(function() {
+        $('.fragment-fade').children('li').addClass('fragment');
+      });
 		</script>
 	</body>
 </html>
