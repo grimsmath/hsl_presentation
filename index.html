@@ -21,6 +21,18 @@
      .col {
        flex: 1
      }
+     .scrollable-slide {
+       bottom: 0px;
+       height: 700px;
+       overflow-y: auto !important;
+       overflow-x: hidden !important;
+     }
+     .footer {
+       position: absolute;
+       display: table;
+       width: 100%;
+       bottom: 0;
+     }
     </style>
 		<!-- Printing and PDF exports -->
 		<script>
@@ -107,7 +119,7 @@
               <i class="fa fa-audio-description"></i>
               Accessibility
             </h2>
-            <ul>
+            <ul
               <li>W3C standards (Alt, Aria, etc.)</li>
               <li>HTML5 semantic markup (header, footer, etc.)</li>
               <li>Keyboard navigation</li>
